@@ -1,9 +1,8 @@
 const fs = require("fs");
 const { createCanvas, loadImage } = require("canvas");
-const width = 1000;
-const height = 1000;
 const canvas = createCanvas(width, height);
 const ctx = canvas.getContext("2d");
+const { layers, width, height } = require("./input/config.js");
 
 const saveLayer = (_canvas) => {
   fs.writeFileSync("./newImage.png", _canvas.toBuffer("image/png"));
