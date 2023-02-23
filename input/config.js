@@ -44,7 +44,7 @@ const layers = [
     location: `${dir}/logo/`,
     elements: getElements(`${dir}/logo/`),
     position: { x: 0, y: 0 },
-    size: { width, height }
+    size: { width: 400, height: 200 }
   }
 ];
 module.exports = { layers, width, height };
